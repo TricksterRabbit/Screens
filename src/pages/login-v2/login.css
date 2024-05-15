@@ -1,0 +1,57 @@
+.navbarV2 {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  height: 10vh;
+  background-image: url("../../assets/image.jpg");
+  background-position: center;
+}
+
+.navbarV2 > img {
+  width: 100px;
+  height: 100px;
+}
+
+.containerV2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background-image: url("../../assets/wallpaperflare.com_wallpaper.jpg");
+  background-position: center;
+}
+
+.containerV2 > .form-containerV2 {
+  height: 500px;
+  width: 500px;
+}
+
+.containerV2 > .form-containerV2 > form {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  gap: 20px;
+}
+
+.containerV2 > .form-containerV2 > form > input {
+  line-height: 35px;
+  border-radius: 10px;
+  border: none;
+  background-color: #05040fb0;
+  padding-left: 10px;
+  padding: 2px;
+}
+
+.containerV2 > .form-containerV2 > form > button {
+  line-height: 50px;
+  margin: 0 70px;
+  border: none;
+  border-radius: 10px;
+  background-color: #05040fb0;
+}
+
+.containerV2 > .form-containerV2 > form > input:focus {
+  outline: 2px #3ba0c5b9 solid;
+}
