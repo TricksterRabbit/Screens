@@ -3,8 +3,8 @@
   flex-direction: row-reverse;
   align-items: center;
   height: 10vh;
-  background-image: url("../../assets/image.jpg");
-  background-position: center;
+  background-color: #020101f0;
+  border-bottom: 2.5px #cb005d solid;
 }
 
 .navbarV2 > img {
@@ -13,17 +13,33 @@
 }
 
 .containerV2 {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 90vh;
-  background-image: url("../../assets/wallpaperflare.com_wallpaper.jpg");
-  background-position: center;
+  background: rgb(251, 165, 228);
+  background: radial-gradient(
+    circle,
+    rgba(251, 165, 228, 1) 29%,
+    rgba(4, 151, 239, 1) 55%,
+    rgba(238, 43, 167, 1) 95%
+  );
 }
 
 .containerV2 > .form-containerV2 {
-  height: 500px;
-  width: 500px;
+  height: 515px;
+  width: 515px;
+  border-radius: 100%;
+  padding: 50px;
+  border: 3.25px #fd3ccf solid;
+}
+
+.containerV2 > img {
+  width: 400px;
+  position: absolute;
+  right: 40px;
+  bottom: 0;
 }
 
 .containerV2 > .form-containerV2 > form {
@@ -36,22 +52,28 @@
 }
 
 .containerV2 > .form-containerV2 > form > input {
-  line-height: 35px;
-  border-radius: 10px;
-  border: none;
-  background-color: #05040fb0;
-  padding-left: 10px;
-  padding: 2px;
+  width: 400px;
+  line-height: 40px;
+  border: 2px #0497ef solid;
+  background-color: #020101c6;
+  padding-left: 40px;
+  padding-right: 40px;
+  clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
 }
 
 .containerV2 > .form-containerV2 > form > button {
-  line-height: 50px;
+  line-height: 40px;
   margin: 0 70px;
   border: none;
   border-radius: 10px;
-  background-color: #05040fb0;
+  background-color: #0497ef;
 }
 
 .containerV2 > .form-containerV2 > form > input:focus {
-  outline: 2px #3ba0c5b9 solid;
+  border: 2px #cb005d solid;
+  outline: none;
+}
+
+.containerV2 > .form-containerV2 > form > button:hover {
+  background-color: #cb005d;
 }

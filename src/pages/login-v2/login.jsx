@@ -1,17 +1,19 @@
 import "./login.css";
-import rabbitGreen from "../../assets/RabbitGreen.png";
+import rabbitPurple from "../../assets/RabbitPurple.png";
+import sasha from "../../assets/sasha.png";
 
 function LoginV2() {
   return (
     <>
       <div className="navbarV2">
-        <img src={rabbitGreen} alt="" />
+        <img src={rabbitPurple} alt="" />
       </div>
       <div className="containerV2">
+        <img src={sasha} />
         <div className="form-containerV2">
           <form>
-            <input type="text" />
-            <input type="password" />
+            <input type="email" placeholder="login" />
+            <input type="password" placeholder="password" />
             <button>Submit</button>
           </form>
         </div>
