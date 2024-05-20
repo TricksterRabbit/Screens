@@ -1,0 +1,100 @@
+.containerV3 {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: rgb(0, 13, 179);
+  background: linear-gradient(
+    174deg,
+    rgba(0, 13, 179, 1) 0%,
+    rgba(7, 255, 169, 1) 50%,
+    rgba(0, 61, 255, 1) 100%
+  );
+}
+
+.containerV3 > .form-containerV3 {
+  height: 500px;
+  width: 500px;
+  padding: 15px;
+}
+
+.containerV3 > .form-containerV3 > form {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+  gap: 25px;
+  background-color: rgba(0, 0, 0, 0.634);
+  border-image: linear-gradient(
+      rgba(0, 13, 179, 1),
+      rgba(7, 255, 169, 1),
+      rgba(0, 61, 255, 1)
+    )
+    1;
+  border-width: 15px;
+  border-style: solid;
+  box-shadow: 0 0 20px black;
+}
+
+.containerV3 > .form-containerV3 > form > img {
+  align-self: center;
+  border: 1px solid rgb(6, 74, 6);
+  width: 100px;
+  border-radius: 100%;
+}
+
+.containerV3 > .form-containerV3 > form > input {
+  line-height: 40px;
+}
+
+.containerV3 > .form-containerV3 > form > .checkbox-and-link-containerV3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+}
+
+.containerV3
+  > .form-containerV3
+  > form
+  > .checkbox-and-link-containerV3
+  > .checkbox-container
+  > .label-containerV3
+  > input {
+  display: none;
+}
+
+.containerV3
+  > .form-containerV3
+  > form
+  > .checkbox-and-link-containerV3
+  > .checkbox-container
+  > .label-containerV3
+  > span {
+  width: 12px;
+  height: 12px;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.641);
+  box-shadow: 0 0 1px black;
+}
+
+.containerV3
+  > .form-containerV3
+  > form
+  > .checkbox-and-link-containerV3
+  > .checkbox-container
+  > .label-containerV3
+  > input:checked
+  + span {
+  background-color: white;
+}
+
+.containerV3 > .form-containerV3 > form > button {
+  line-height: 40px;
+  background-color: rgb(3, 146, 96);
+  border: none;
+  color: white;
+  text-transform: uppercase;
+}
