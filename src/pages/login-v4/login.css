@@ -1,0 +1,82 @@
+.containerV4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("../../assets/space.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.containerV4 > .earth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../assets/earth.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 740px;
+  height: 740px;
+  border-radius: 50%;
+  box-shadow: -25px -25px 25px black inset, 2.5px 2.5px 7.5px white inset,
+    0px 0px 10px #3a93ff;
+  animation: rotate 35s linear infinite;
+}
+
+.containerV4 > .earth > .form-containerV4 {
+  display: flex;
+  justify-content: center;
+  width: 500px;
+  height: 400px;
+  border: #3ba0c51f solid 3px;
+  background-color: #423bd126;
+  border-radius: 10px;
+}
+
+.containerV4 > .earth > .form-containerV4 > form > h1 {
+  color: rgba(255, 255, 255, 0.699);
+}
+
+.containerV4 > .earth > .form-containerV4 > form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 75px;
+  gap: 25px;
+}
+
+.containerV4 > .earth > .form-containerV4 > form > input {
+  line-height: 35px;
+  border-radius: 10px;
+  border: none;
+  background-color: #05040fb0;
+  padding-left: 10px;
+  color: white;
+}
+
+.containerV4 > .earth > .form-containerV4 > form > button {
+  line-height: 50px;
+  margin: 0 70px;
+  border: none;
+  border-radius: 10px;
+  background-color: #3ba0c581;
+  color: whitesmoke;
+}
+
+.containerV4 > .earth > .form-containerV4 > form > input:focus {
+  outline: 2px #3ba0c5b9 solid;
+}
+
+.containerV4 > .earth > .form-containerv4 > form > button:hover {
+  background-color: #3ba0c5e3;
+}
+
+@keyframes rotate {
+  0% {
+    background-position: 1%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
